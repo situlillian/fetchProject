@@ -24,10 +24,11 @@ class Fetch extends React.Component {
   render() {
     const lis = [];
     this.state.countries.forEach((country, i) => {
-      lis.push(<tr key={i}>
-        <td>Country: {country.name}</td>
-        <td>Alpha Code 2: {country.alpha2_code}</td>
-      </tr>);
+      lis.push(
+        <tr key={i}>
+          <td>{country.name}</td>
+          <td>Alpha Code 2: {country.alpha2_code}</td>
+        </tr>);
     });
 
     return (
